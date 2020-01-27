@@ -91,6 +91,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         answers.forEach { Log.d("APP", it.name) }
+        answers.add((0..6).random(), goodPeople)
 
         return answers
     }
