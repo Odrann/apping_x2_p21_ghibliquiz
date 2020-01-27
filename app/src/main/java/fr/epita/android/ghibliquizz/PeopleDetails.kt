@@ -4,6 +4,7 @@ import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import com.google.gson.GsonBuilder
 import fr.epita.android.ghibliquizz.Interfaces.GhibliApiInterface
 import fr.epita.android.ghibliquizz.Models.FilmObject
@@ -53,6 +54,9 @@ class PeopleDetails : AppCompatActivity() {
                 Log.d("APP", "failed to get the film")
                 Log.d("APP", t.message)
             }
+
+
+
 
             override fun onResponse(call: Call<FilmObject>, response: Response<FilmObject>) {
                 val rCode = response.code()
