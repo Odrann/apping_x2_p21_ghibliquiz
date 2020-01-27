@@ -51,7 +51,7 @@ class PeopleDetails : AppCompatActivity() {
         // set the callback for getting the chosen film
         val callbackFilm = object : Callback<FilmObject> {
             override fun onFailure(call: Call<FilmObject>, t: Throwable) {
-                Log.d("APP", "failed to get the film")
+                Log.d("APP", "echec recuperation film")
                 Log.d("APP", t.message)
             }
 
@@ -71,9 +71,9 @@ class PeopleDetails : AppCompatActivity() {
 
 
 
-                        Log.d("APP", "retrieved the film")
+                        Log.d("APP", "recupere le film")
                     } else {
-                        Log.d("APP", "empty response")
+                        Log.d("APP", "reponse vide")
                     }
                 } else {
                     Log.d("APP", "bad response code received: $rCode")
